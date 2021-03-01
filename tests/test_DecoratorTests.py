@@ -17,7 +17,7 @@ class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
         pass
 
-    def test_decorate(self):
+    def test_decorate(say_whee):
         say_whee()
 
 

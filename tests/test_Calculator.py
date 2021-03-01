@@ -1,6 +1,6 @@
 import unittest
 
-from src.calculator.calculator import Calculator
+from Calculator.Calculator import Calculator
 from CVS_Reader.Reader import Reader
 
 
@@ -30,36 +30,3 @@ class CalculatorTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.subtract(row[0], row[1]), float(row[2]))
 
 
-    def test_multiplication(self):
-        file = Reader("testCases/Multiplication.csv").content
-        print("TESTING MULTIPLICATION\n")
-        for row in file:
-            result = float(row[2])
-
-            self.assertEqual(self.calculator.multiply(row[0], row[1]), float(row[2]))
-
-
-    def test_division(self):
-        file = Reader("testCases/Division.csv").content
-        print("TEST DIVISION\n")
-        for row in file:
-            result = float(row[2])
-            self.assertEqual(self.calculator.divide(row[0], row[1]), float(row[2]))
-
-
-    def test_square(self):
-        file = Reader("testCases/Square.csv").content
-        print("TEST SQUARE\n")
-        for row in file:
-            result = float(row[1])
-            self.assertEqual(self.calculator.square(row[0]), float(row[1]))
-            self.assertEqual(self.calculator.result, result)
-
-
-    def test_square_root(self):
-        file = Reader("testCases/SquareRoot.csv").content
-        print("TEST SQUARE ROOT\n")
-        for row in file:
-            result = float(row[1])
-            self.assertAlmostEqual(self.calculator.square_root(row[0]), float(row[1]))
-            self.assertAlmostEqual(self.calculator.result, result)
