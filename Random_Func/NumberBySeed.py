@@ -1,8 +1,8 @@
 import random
-from Random_Func.randomNumber import randNum
+from Random_Func.randomNumber import randNumber
 
 
-class NumberBySeed(randNum):
+class NumberBySeed(randNumber):
     def __init__(self, start, end, seed):
         super().__init__(start, end)
         random.seed(seed)

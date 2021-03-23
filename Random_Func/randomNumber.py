@@ -1,7 +1,7 @@
 import random
 
 
-class randNum:
+class randNumber:
     def __init__(self, start, end):
         random.seed()
         self.start = start
