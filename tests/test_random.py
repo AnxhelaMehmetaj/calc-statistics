@@ -15,31 +15,30 @@ class MyTestCase(unittest.TestCase):
         print('tearDown')
 
     def test_random_number(self):
-        print("*"*10+"Random Number Test"+"*"*10)
+        print("******** Random Number Test **********")
         print("Random Number: ")
         print(self.sample.randNum(0, 100))
 
     def float_random_number_by_seed(self):
-        print("*" * 10 + "Random Float Number By Seed Test" + "*" * 10)
-        #print(self.randGenerator.randInt(0, 100, 2))
-        startVal = 0.0
-        endVal = 100.0
+        print(" Random Float Number By Seed Test" )
+
+        first = 0.0
+        last = 100.0
         seed = 10
-        print("Testing Random Numbers by seed:", seed)
-        randomFloat = self.sample.randNumBySeed(startVal, endVal, seed)
-        print(randomFloat, self.sample.randNumBySeed(startVal, endVal, seed))
-        self.assertEqual(randomFloat, self.sample.randNumBySeed(startVal, endVal, seed))
+        print(" Random Numbers by seed:", seed)
+        randomFloat = self.sample.randNumBySeed(first, last, seed)
+        print(randomFloat, self.sample.randNumBySeed(first, last, seed))
+        self.assertEqual(randomFloat, self.sample.randNumBySeed(first, last, seed))
 
     def int_random_number_by_seed(self):
-        print("*" * 10 + "Random Int Number By Seed Test" + "*" * 10)
-
-        startVal = 0
-        endVal = 100
+        print("Random Int Number By Seed Test")
+        first = 0
+        last= 100
         seed = 3
-        print("Testing Random Numbers by seed:", seed)
-        randomInt = self.sample.randNumBySeed(startVal, endVal, seed)
-        print(randomInt, self.sample.randNumBySeed(startVal, endVal, seed))
-        self.assertEqual(randomInt, self.sample.randNumBySeed(startVal, endVal, seed))
+        print("Random Numbers by seed:", seed)
+        randomInt = self.sample.randNumBySeed(first, last, seed)
+        print(randomInt, self.sample.randNumBySeed(first, last, seed))
+        self.assertEqual(randomInt, self.sample.randNumBySeed(first, last, seed))
 
     def test_random_number_list_int_by_seed(self):
         print("*" * 10 + "Random Number List By Seed " + "*" * 10)

@@ -1,12 +1,11 @@
 import random
-from Random_Func import ItemFromList, ItemFromListBySeed, ItemsFromList, ItemsFromListBySeed, ListOfNumbers, \
-    randomNumber, NumberBySeed
+from Random_Func import ItemFromList, ItemFromListBySeed, ItemsFromList, ItemsFromListBySeed, ListOfNumbers, randomNumber, NumberBySeed
 
 
 class RandomSamples:
     # Generate a random number without a seed between a range of two numbers - Both Integer and Decimal
     def randNum(self, start, end):
-        return randomNumber.randNumber(start, end).getResult()
+        return randomNumber.randomChoice(start, end).getResult()
 
     # Generate a random number with a seed between a range of two numbers - Both Integer and Decimal
 
