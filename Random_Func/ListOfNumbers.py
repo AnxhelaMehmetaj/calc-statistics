@@ -5,13 +5,13 @@ class randListOfNum(NumberBySeed):
     def __init__(self, start, end, n, seed):
         super().__init__(start, end, seed)
         self.n = n
-        self.genList = []
-        self.generateList()
+        self.resultList = []
+        self.outputList()
 
-    def generateList(self):
+    def outputList(self):
         for i in range(self.n):
             super().generateValue()
-            self.genList.append(super().getResult())
+            self.resultList.append(super().getResult())
 
     def getResult(self):
-        return self.genList
+        return self.resultList
