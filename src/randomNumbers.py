@@ -1,5 +1,5 @@
 import random
-from randomFunctions import ItemFromList, ItemFromListBySeed, ItemsFromList, ItemsFromListBySeed, ListOfNumbers, randomNumber, NumberBySeed
+from Random_Func import ItemFromList, ItemFromListBySeed, ItemsFromList, ItemsFromListBySeed, ListOfNumbers, randomNumber, NumberBySeed
 
 class RandomGenerators:
     # Generate a random number without a seed between a range of two numbers - Both Integer and Decimal

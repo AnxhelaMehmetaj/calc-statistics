@@ -1,4 +1,4 @@
-from randomFunctions.NumberBySeed import NumberBySeed
+from Random_Func.NumberBySeed import NumberBySeed
 
 
 class randListOfNum(NumberBySeed):

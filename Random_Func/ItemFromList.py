@@ -10,7 +10,7 @@ class ItemFromList:
 
     def randomSample(self):
         if not isinstance(self.array, list):
-            self.output = "ERROR: Input not Array"
+            self.output = "ERROR"
         else:
             self.output = random.choice(self.array)
 

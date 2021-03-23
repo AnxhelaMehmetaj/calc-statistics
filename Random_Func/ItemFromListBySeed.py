@@ -1,5 +1,5 @@
 import random
-from randomFunctions.ItemFromList import ItemFromList
+from Random_Func.ItemFromList import ItemFromList
 
 
 class ItemsFromList(ItemFromList):

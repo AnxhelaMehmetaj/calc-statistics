@@ -1,5 +1,5 @@
 import random
-from randomFunctions.randomNumber import randNum
+from Random_Func.randomNumber import randNum
 
 
 class NumberBySeed(randNum):

@@ -1,5 +1,5 @@
 import unittest
-from src.randomGenerator import RandomGenerators
+from src.randomNumbers import RandomGenerators
 
 class MyTestCase(unittest.TestCase):
 
@@ -8,9 +8,7 @@ class MyTestCase(unittest.TestCase):
         print('')
         print('setUp')
 
-    # execute after every tests case function run.
     def tearDown(self):
-        # release the Calculator object.
         if self.randGenerator is not None:
             self.randGenerator = None
         print('')
@@ -21,7 +19,7 @@ class MyTestCase(unittest.TestCase):
         print("Random Number: ")
         print(self.randGenerator.randNum(0, 100))
 
-    def test_random_number_by_seed_float(self):
+    def float_random_number_by_seed(self):
         print("*" * 10 + "Random Float Number By Seed Test" + "*" * 10)
         #print(self.randGenerator.randInt(0, 100, 2))
         startVal = 0.0
@@ -32,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         print(randomFloat, self.randGenerator.randNumBySeed(startVal, endVal, seed))
         self.assertEqual(randomFloat, self.randGenerator.randNumBySeed(startVal, endVal, seed))
 
-    def test_random_number_by_seed_int(self):
+    def int_random_number_by_seed(self):
         print("*" * 10 + "Random Int Number By Seed Test" + "*" * 10)
         #print(self.randGenerator.randInt(0, 100, 2))
         startVal = 0
@@ -44,12 +42,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(randomInt, self.randGenerator.randNumBySeed(startVal, endVal, seed))
 
     def test_random_number_list_int_by_seed(self):
-        print("*" * 10 + "Random Number List By Seed Test" + "*" * 10)
+        print("*" * 10 + "Random Number List By Seed " + "*" * 10)
         startVal = 0
         endVal = 50
         seed = self.randGenerator.randNum(0, 10)
         listSize = 12
-        print("Testing Random Numbers by seed:", seed)
+        print("Random Numbers by seed:", seed)
         randomListInt = self.randGenerator.ranNumBySeedList(startVal, endVal, listSize, seed)
         print(randomListInt, self.randGenerator.ranNumBySeedList(startVal, endVal, listSize, seed))
         self.assertEqual(randomListInt, self.randGenerator.ranNumBySeedList(startVal, endVal,  listSize, seed))
