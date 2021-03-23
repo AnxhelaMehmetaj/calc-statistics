@@ -7,4 +7,4 @@ class ItemsFromList(ItemFromList):
         super().__init__(array)
         self.genItems = []
         random.seed(seed)
-        super().generateChoice()
+        super().randomSample()

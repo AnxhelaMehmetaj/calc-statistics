@@ -13,7 +13,7 @@ class ItemsFromList(ItemFromList):
             self.items = "ERROR: n is greater then array size"
         else:
             for i in range(self.n):
-                super().generateChoice()
+                super().randomSample()
                 # want to append randomly chosen value from
                 # array and remove that value from the
                 # list so we don't choose it again

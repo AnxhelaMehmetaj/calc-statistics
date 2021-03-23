@@ -6,9 +6,9 @@ class ItemFromList:
         self.array = array
         self.output = None
         random.seed()
-        self.generateChoice()
+        self.randomSample()
 
-    def generateChoice(self):
+    def randomSample(self):
         if not isinstance(self.array, list):
             self.output = "ERROR: Input not Array"
         else:
