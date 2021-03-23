@@ -1,7 +1,7 @@
-from randomFunctions.randomNumberBySeed import randNumBySeed
+from randomFunctions.NumberBySeed import NumberBySeed
 
 
-class randListOfNum(randNumBySeed):
+class randListOfNum(NumberBySeed):
     def __init__(self, start, end, n, seed):
         super().__init__(start, end, seed)
         self.n = n

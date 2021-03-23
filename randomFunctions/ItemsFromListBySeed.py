@@ -1,8 +1,8 @@
 import random
-from randomFunctions.randomItemsFromList import randomItemsFromList
+from randomFunctions.ItemsFromList import ItemsFromList
 
 
-class randomItemsFromListBySeed(randomItemsFromList):
+class ItemsFromListBySeed(ItemsFromList):
     def __init__(self, array, n, seed):
         super().__init__(array, n)
         self.seed = seed

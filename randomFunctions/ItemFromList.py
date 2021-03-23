@@ -1,7 +1,7 @@
 import random
 
 
-class randomItemFromList:
+class ItemFromList:
     def __init__(self, array):
         self.array = array
         self.output = None
